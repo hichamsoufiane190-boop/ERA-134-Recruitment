@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ERA 134 • Kingdom Merger & Recruitment</title>
+  <style>
+    :root {
+      --bg-dark: #0a0b0e;
+      --card-bg: #12151c;
+      --accent-cyan: #00f0ff;
+      --accent-gold: #ffb700;
+      --text-main: #f0f4f8;
+      --text-muted: #8a99ad;
+      --border: rgba(0, 240, 255, 0.2);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: system-ui, -apple-system, sans-serif; }
+    body { background-color: var(--bg-dark); color: var(--text-main); line-height: 1.6; }
+    header {
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+      background: rgba(10, 11, 14, 0.95);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo { font-size: 1.4rem; font-weight: 900; color: var(--accent-cyan); text-decoration: none; }
+    .badge {
+      background: rgba(0, 240, 255, 0.1);
+      color: var(--accent-cyan);
+      padding: 4px 12px;
+      border-radius: 20px;
+      border: 1px solid var(--accent-cyan);
+      font-size: 0.75rem;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: radial-gradient(circle at center, #1a233a 0%, var(--bg-dark) 70%);
+    }
+    .hero h1 { font-size: 2.8rem; color: #fff; margin-bottom: 10px; font-weight: 900; }
+    .hero h1 span { color: var(--accent-gold); }
+    .hero p { font-size: 1rem; color: var(--text-muted); max-width: 600px; margin: 0 auto 25px; }
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: linear-gradient(135deg, var(--accent-cyan), #0077ff);
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+      max-width: 900px;
+      margin: 20px auto 40px;
+      padding: 0 15px;
+    }
+    .stat-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 15px 10px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .stat-card h3 { font-size: 1.3rem; color: var(--accent-gold); }
+    .stat-card p { color: var(--text-muted); font-size: 0.8rem; margin-top: 4px; }
+    .section { max-width: 900px; margin: 0 auto 40px; padding: 0 15px; }
+    .section-title { text-align: center; font-size: 1.6rem; margin-bottom: 20px; color: var(--accent-cyan); }
+    .roster-table { width: 100%; border-collapse: collapse; background: var(--card-bg); border-radius: 10px; overflow: hidden; font-size: 0.9rem; }
+    .roster-table th, .roster-table td { padding: 12px 10px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .roster-table th { background: rgba(0, 240, 255, 0.08); color: var(--accent-cyan); }
+    .rank { font-weight: bold; color: var(--accent-gold); }
+    .req-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; }
+    .req-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 18px;
+      border-radius: 10px;
+    }
+    .req-card h4 { color: var(--accent-gold); margin-bottom: 8px; font-size: 1.05rem; }
+    .req-card p { font-size: 0.85rem; color: var(--text-muted); }
+    footer { text-align: center; padding: 30px 15px; color: var(--text-muted); border-top: 1px solid var(--border); font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#" class="logo">ERA 134</a>
+    <span class="badge">RECRUITMENT & MIGRATION OPEN</span>
+  </header>
+
+  <section class="hero">
+    <h1>ERA <span>134</span></h1>
+    <p>A powerful merger of Kingdoms E381 × E390 × E404. Join us to dominate the next KvK!</p>
+    <a href="https://discord.gg/S2898Ba3X" class="btn" target="_blank">Join Official Discord</a>
+  </section>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <h3>1.60B+</h3>
+      <p>Total Top 10 Power</p>
+    </div>
+    <div class="stat-card">
+      <h3>E381 / 390 / 404</h3>
+      <p>Merged Kingdoms</p>
+    </div>
+    <div class="stat-card">
+      <h3>3 Arthurs</h3>
+      <p>Featured Leaders</p>
+    </div>
+    <div class="stat-card">
+      <h3>40M - 50M+</h3>
+      <p>Min. Power Req.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <h2 class="section-title">Top 10 Player Roster</h2>
+    <div style="overflow-x:auto;">
+      <table class="roster-table">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Player Name</th>
+            <th>Total Power</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="rank">#01</td><td>ScrubbyGG</td><td>337,884,637</td></tr>
+          <tr><td class="rank">#02</td><td>忘川之水</td><td>272,485,574</td></tr>
+          <tr><td class="rank">#03</td><td>차우✿KIM</td><td>246,303,885</td></tr>
+          <tr><td class="rank">#04</td><td>VR⁴⁰⁴</td><td>139,076,316</td></tr>
+          <tr><td class="rank">#05</td><td>ORB150</td><td>137,794,238</td></tr>
+          <tr><td class="rank">#06</td><td>Arthur06</td><td>124,033,152</td></tr>
+          <tr><td class="rank">#07</td><td>Ordy</td><td>116,963,280</td></tr>
+          <tr><td class="rank">#08</td><td>◥GuaDraX◤</td><td>114,870,209</td></tr>
+          <tr><td class="rank">#09</td><td>光头G</td><td>110,626,764</td></tr>
+          <tr><td class="rank">#10</td><td>Jყɳ¹³⁴</td><td>110,023,003</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Recruitment Requirements</h2>
+    <div class="req-list">
+      <div class="req-card">
+        <h4>Power & March</h4>
+        <p>Minimum threshold of 40M to 50M+ Power. Main march details must be disclosed upon application.</p>
+      </div>
+      <div class="req-card">
+        <h4>Merits & Kills</h4>
+        <p>Applicants must show battle performance metrics (Merits & Kill Points) for KvK evaluation.</p>
+      </div>
+      <div class="req-card">
+        <h4>Active Hours</h4>
+        <p>Provide active play timeframes relative to Server Time to ensure alliance rally coordination.</p>
+      </div>
+      <div class="req-card">
+        <h4>Discord Activity</h4>
+        <p>Active presence on Discord is mandatory for listening to callouts and leadership strategy.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>ERA 134 • E381 × E390 × E404 • ALL RIGHTS RESERVED</p>
+  </footer>
+
+</body>
+</html>
